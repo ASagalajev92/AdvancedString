@@ -21,14 +21,14 @@ public class MainActivity extends AppCompatActivity {
         String nameString = "Bob, Marci, Charley, Alex, Brock, Man";
         String[] names = nameString.split(", ");
         for (String name : names) {
-            Log.i("MyName",name);
+            Log.i("MyName", name);
         }
 
 
         // Substring method in string
 
         String geometry = "Geometry";
-        String meter = geometry.substring(3,7);
+        String meter = geometry.substring(3, 7);
         Log.i("Meter", meter);
 
 
@@ -42,9 +42,11 @@ public class MainActivity extends AppCompatActivity {
         Matcher matcherImage = patternImg.matcher(url); // Creating tool that checks all text to matches for pattern
         Matcher matcherName = patternName.matcher(url); // Creating tool that checks all text to matches for pattern
         while (matcherImage.find() & matcherName.find()) {
-            Log.i("MyName",matcherImage.group(1));
-            Log.i("MyName",matcherName.group(1));
+            Log.i("MyName", matcherImage.group(1));
+            Log.i("MyName", matcherName.group(1));
 
         }
     }
+}
+
 
